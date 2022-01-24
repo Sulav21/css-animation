@@ -1,0 +1,58 @@
+.container{
+    background:orange;
+    width:90vw;
+    height: 90vh;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.parent{
+    background:purple;
+    width:60vw;
+    height:50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.ball{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    /* background:radial-gradient(white,orange); */
+    position:absolute;
+    top:10px;
+    left:10px;
+    animation: bounce 4s infinite;
+    /* animation-direction: alternate-reverse; */
+}
+@keyframes bounce{
+    0%{
+        top:40px;
+        left:40px;
+        background-color: red;
+    }
+    25%{
+        top:40px;
+        left:80vw;
+        background-color: green;
+    }
+    50%{
+        top:80vh;
+        left:80vw;
+        background-color: black;
+    }
+    75%{
+        top:80vh;
+        left:40px;
+        background-color: white;
+    }
+    100%{
+        top:40px;
+        left:40px;
+
+    }
+}
